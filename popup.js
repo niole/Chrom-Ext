@@ -92,6 +92,14 @@ function renderStatus(statusText) {
   document.getElementById('status').textContent = statusText;
 }
 
+window.addEventListener('click', function(event) {
+  event.preventDefault();
+  console.log('a click event was caught!');
+  console.log(event);
+  console.log(event.target);
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
   getCurrentTabUrl(function(url) {
     // Put the image URL in Google search.
