@@ -95,7 +95,7 @@ function renderStatus(statusText) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  window.addListener('click', function(event) {
+  window.addEventListener('click', function(event) {
     event.preventDefault();
     console.log('a click event was caught!');
     console.log(event);
